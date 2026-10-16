@@ -1,0 +1,641 @@
+{
+    "list":[
+        {
+            "id":"ExpertForce",
+            "param":[
+                {"addRange": 3, "bulletSpeed":0.9 },
+                {"addRange": 6, "bulletSpeed":0.8 },
+                {"addRange": 9, "bulletSpeed":0.7 },
+                {"addRange": 12, "bulletSpeed":0.6 },
+                {"addRange": 20, "bulletSpeed":0.5 }
+            ]
+        },
+
+        {
+            "id":"MasterShotgun",
+            "param":[
+                {"addCount": 2 },
+                {"addCount": 3 },
+                {"addCount": 4 },
+                {"addCount": 5 },
+                {"addCount": 8 }
+            ]
+        },
+
+        {
+            "id":"MasterContinuous",
+            "param":[
+                {"addCount": 1 },
+                {"addCount": 2 },
+                {"addCount": 3 },
+                {"addCount": 4 },
+                {"addCount": 5 }
+            ]
+        },
+
+        {
+            "id":"WhirlWindSlash",
+            "param":[
+                {"cooldown": 3, "size":3.5, "damage":8 },
+                {"cooldown": 2.5, "size":3.5, "damage":12 },
+                {"cooldown": 2, "size":3.5, "damage":16 },
+                {"cooldown": 1.5, "size":3.5, "damage":20 },
+                {"cooldown": 0.5, "size":5, "damage":30 }
+            ]
+        },
+
+        {
+            "id":"ExtraEmitBullet",
+            "param":[
+                {"probability": 0.5, "sizeFactor":0.75, "damageFactor":0.5 },
+                {"probability": 0.5, "sizeFactor":0.75, "damageFactor":1 },
+                {"probability": 0.5, "sizeFactor":0.75, "damageFactor":1.5 },
+                {"probability": 0.5, "sizeFactor":0.75, "damageFactor":2 },
+                {"probability": 0.8, "sizeFactor":1, "damageFactor":3 }
+            ]
+        },
+
+        {
+            "id":"CyclicElementEnhance",
+            "param":[
+                {"duration": 3, "addDamagePercent":1, "missileTriggerRate":0.5 },
+                {"duration": 3, "addDamagePercent":2, "missileTriggerRate":0.5 },
+                {"duration": 3, "addDamagePercent":3, "missileTriggerRate":0.5 },
+                {"duration": 3, "addDamagePercent":4, "missileTriggerRate":0.5 },
+                {"duration": 3, "addDamagePercent":8, "missileTriggerRate":0.5 }
+            ]
+        },
+
+        {
+            "id":"MoveEnhanceAttack",
+            "param":[
+                {"distance": 6, "addDamage":3, "addCritic":0, "addBulletScale":0.5, "dizzyTime":2 },
+                {"distance": 6, "addDamage":6, "addCritic":0, "addBulletScale":0.75, "dizzyTime":2 },
+                {"distance": 6, "addDamage":9, "addCritic":0, "addBulletScale":1, "dizzyTime":2 },
+                {"distance": 6, "addDamage":12, "addCritic":0, "addBulletScale":1.25, "dizzyTime":2 },
+                {"distance": 6, "addDamage":15, "addCritic":0, "addBulletScale":2, "dizzyTime":2 }
+            ]
+        },
+
+        {
+            "id":"ExEnergyForExDamage",
+            "param":[
+                {"extraEnergy": 0.01, "extraDamage":1},
+                {"extraEnergy": 0.01, "extraDamage":2},
+                {"extraEnergy": 0.01, "extraDamage":3}
+            ]
+        },
+
+        {
+            "id":"PetCharge",
+            "param":[
+                {"addAttackSpeedFactor": 0.5, "addDamageFactor":0, "addMoveSpeedFactor":0.5, "duration":-1},
+                {"addAttackSpeedFactor": 1.0, "addDamageFactor":0, "addMoveSpeedFactor":1.0, "duration":-1},
+                {"addAttackSpeedFactor": 1.5, "addDamageFactor":0, "addMoveSpeedFactor":1.5, "duration":-1},
+                {"addAttackSpeedFactor": 2.0, "addDamageFactor":0, "addMoveSpeedFactor":2.0, "duration":-1},
+                {"addAttackSpeedFactor": 2.5, "addDamageFactor":0, "addMoveSpeedFactor":2.5, "duration":-1}
+            ]
+        },
+
+        {
+            "id":"BullyTheWeak",
+            "param":[
+                {"addDuration": 1, "addDamageFactor":0.5}
+            ]
+        },
+
+        {
+            "id":"Premeditate",
+            "param":[
+                {"addSkillLevel": 4, "addAtkSpdFactor":0.4, "addCrit":25, "addWeaponDmgFactor":0.1, "duration":8, "atkAddCounter":0.5, "moveAddCounter":0.2, "maxCount":20},
+                {"addSkillLevel": 8, "addAtkSpdFactor":0.8, "addCrit":25, "addWeaponDmgFactor":0.1, "duration":8, "atkAddCounter":0.5, "moveAddCounter":0.2, "maxCount":20},
+                {"addSkillLevel": 12, "addAtkSpdFactor":1.2, "addCrit":25, "addWeaponDmgFactor":0.1, "duration":8, "atkAddCounter":0.5, "moveAddCounter":0.2, "maxCount":20},
+                {"addSkillLevel": 16, "addAtkSpdFactor":2, "addCrit":25, "addWeaponDmgFactor":0.1, "duration":12, "atkAddCounter":0.5, "moveAddCounter":0.2, "maxCount":20}
+            ]
+        },
+
+        {
+            "id":"ConsumeRecycle",
+            "param":[
+                {"energy": 30, "addDmgFactor":0.05, "addAtkSpdFactor":0.05, "addAoeRange":0.1, "maxCount":5, "duration":12},
+                {"energy": 30, "addDmgFactor":0.1, "addAtkSpdFactor":0.1, "addAoeRange":0.2, "maxCount":5, "duration":12},
+                {"energy": 30, "addDmgFactor":0.15, "addAtkSpdFactor":0.15, "addAoeRange":0.3, "maxCount":5, "duration":12},
+                {"energy": 30, "addDmgFactor":0.2, "addAtkSpdFactor":0.2, "addAoeRange":0.4, "maxCount":5, "duration":12},
+                {"energy": 30, "addDmgFactor":0.25, "addAtkSpdFactor":0.25, "addAoeRange":0.5, "maxCount":5, "duration":12}
+            ]
+        },
+
+        {
+            "id":"AddDefWithHighEnergy",
+            "param":[
+                {"energyThreshold": 0.8, "addDefence":2}
+            ]
+        },
+
+        {
+            "id":"AddHealthRegen",
+            "param":[
+                {"addHealthRegen": 0.20, "addEnergyBallRecover":-2},
+                {"addHealthRegen": 0.40, "addEnergyBallRecover":-4},
+                {"addHealthRegen": 0.60, "addEnergyBallRecover":-6},
+                {"addHealthRegen": 0.80, "addEnergyBallRecover":-8},
+                {"addHealthRegen": 1.50, "addEnergyBallRecover":-15}
+            ]
+        },
+
+        {
+            "id":"PeriodicImmuneElement",
+            "param":[
+                {"period": 8},
+                {"period": 5},
+                {"period": 2}
+            ]
+        },
+
+        {
+            "id":"RecoverArmorOnInflictDebuff",
+            "param":[
+                {"probability": 0.25, "armor":1},
+                {"probability": 0.25, "armor":2},
+                {"probability": 0.25, "armor":3},
+                {"probability": 0.25, "armor":4},
+                {"probability": 0.5, "armor":5}
+            ]
+        },
+
+        {
+            "id":"WalkStandTrick",
+            "param":[
+                {"addAtkSpdFactor": 0.3, "addDefence":-1},
+                {"addAtkSpdFactor": 0.6, "addDefence":-2},
+                {"addAtkSpdFactor": 0.9, "addDefence":-3},
+                {"addAtkSpdFactor": 1.2, "addDefence":-4},
+                {"addAtkSpdFactor": 2, "addDefence":-5}
+            ]
+        },
+
+        {
+            "id":"FreeRefreshShop",
+            "param":[
+                {"times": 1},
+                {"times": 2},
+                {"times": 3},
+                {"times": 4},
+                {"times": 8}
+            ]
+        },
+
+        {
+            "id":"ShopDiscount",
+            "param":[
+                {"discount": 0.08},
+                {"discount": 0.16},
+                {"discount": 0.24},
+                {"discount": 0.30},
+                {"discount": 0.36}
+            ]
+        },
+
+        {
+            "id":"MorePlants",
+            "param":[
+                {"addPlantAmount": 1},
+                {"addPlantAmount": 2},
+                {"addPlantAmount": 3},
+                {"addPlantAmount": 4},
+                {"addPlantAmount": 5}
+            ]
+        },
+
+        {
+            "id":"StingRevenge",
+            "param":[
+                {"count":4, "addDamage": 0, "cooldown": 0.2},
+                {"count":8, "addDamage": 0, "cooldown": 0.2},
+                {"count":12, "addDamage": 0, "cooldown": 0.2},
+                {"count":16, "addDamage": 0, "cooldown": 0.2},
+                {"count":30, "addDamage": 0, "cooldown": 0.2}
+            ]
+        },
+
+        {
+            "id":"HolyNovaOnDying",
+            "param":[
+                {"cooldown":300, "damageToBoss": 200, "radius":20, "healHpPercent":0.5, "healHp": 0}
+            ]
+        },
+
+        {
+            "id":"SoulStrike",
+            "param":[
+                {"dropSoulMin":2, "dropSoulMax": 4, "fullSoul":12, "mainDamage":60, "radius": 2, "AOEDamage":15, "addDamageFactor":0.01}
+            ]
+        },
+
+        {
+            "id":"FrostNovaOnShieldHit",
+            "param":[
+                {"interval":15, "max": 3, "freezingTime":5, "radius": 1}
+            ]
+        },
+
+        {
+            "id":"RegularFireBreath",
+            "param":[
+                {"time":3, "damage":5, "explodeDamage":33, "scale":2, "interval":3}
+            ]
+        },
+
+        {
+            "id":"MoveReleaseHurricane",
+            "param":[
+                {"distance":20, "destroyDelay":1.5, "size":1, "damage":5, "lifeTime":8, "seekEnemyDelay": 60 }
+            ]
+        },
+
+        {
+            "id":"ChaosStrike",
+            "param":[
+                {"addDmgFactor":1, "addBulletSize":1.5}
+            ]
+        },
+
+        {
+            "id":"BattleGainCoin",
+            "param":[
+                {"addCoinPercent": 0.2}
+            ]
+        },
+
+        {
+            "id":"GainCoinOnCriticalKill",
+            "param":[
+                {"probability": 0.5, "coin":1}
+            ]
+        },
+
+        {
+            "id":"AddEnBallRecvAndEnemy",
+            "param":[
+                {"addEnergyBallRecv":4, "addEnemyAmount":0.15}
+            ]
+        },
+
+        {
+            "id":"ExHpToArmor",
+            "param":[
+            ]
+        },
+
+        {
+            "id":"Siphon",
+            "param":[
+                {"lossDefence":1, "range":5, "damageHpFactor":0.25, "damageMax":300, "cooldown":6, "restoreHit":3}
+            ]
+        },
+
+        {
+            "id":"PetMimic",
+            "param":[
+                {"cooldown":3}
+            ]
+        },
+
+        {
+            "id":"MoreSalary",
+            "param":[
+                {"salary":100, "damageCooldown":1, "damage":1}
+            ]
+        },
+
+        {
+            "id":"SummonPet",
+            "param":[
+                {"energy":100}
+            ]
+        },
+
+        {
+            "id":"ElementalAreaEnhance",
+            "param":[
+                {"addDuration":0.5, "durationMax":2, "addRadius":1, "radiusMax":0.3, "addDamageFactor":0.25, "damageFactorMax":1}
+            ]
+        },
+
+        {
+            "id":"HeavyStrike",
+            "param":[
+                {"damageFactor":1, "size":1.5, "attackCount":4}
+            ]
+        },
+
+        {
+            "id":"RandomDodge",
+            "param":[
+                {"probability":0.3, "teleportDistance":10}
+            ]
+        },
+
+        {
+            "id":"GiftPackage",
+            "param":[
+                {"salary":15, "maxHp":1, "maxEnergy":30}
+            ]
+        },
+
+        {
+            "id":"AirReinforcement",
+            "param": [
+                {
+                    "addAtkSpeed": 5,
+                    "addMoveSpeedFactor": -0.3,
+                    "duration": 8,
+                    "cooldown": 20,
+                    "mercenaries": [
+                        {
+                            "name": "npc_01_x",
+                            "weapon": "weapon_026"
+                        },
+                        {
+                            "name": "npc_02_x",
+                            "weapon": "weapon_026"
+                        },
+                        {
+                            "name": "npc_05_x",
+                            "weapon": "weapon_026"
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "id":"SkillPowStack",
+            "param": [
+                { "damageFactor": 0.1 },
+                { "damageFactor": 0.15 },
+                { "damageFactor": 0.2 }
+            ]
+        },
+
+        {
+            "id":"PotionOnKill",
+            "param": [
+                {
+                    "addEffectFactor": 0.5,
+                    "portions":[
+                        {
+                            "weight":44
+                        },
+                        {
+                            "weight":1,
+                            "name":"RGPrefab/LevelObject/Item/mysterious_pot_atk.prefab"
+                        },
+                        {
+                            "weight":1,
+                            "name":"RGPrefab/LevelObject/Item/mysterious_pot_atk_spd.prefab"
+                        },
+                        {
+                            "weight":1,
+                            "name":"RGPrefab/LevelObject/Item/mysterious_pot_move_spd.prefab"
+                        },
+                        {
+                            "weight":1,
+                            "name":"RGPrefab/LevelObject/Item/mysterious_pot_crit.prefab"
+                        },
+                        {
+                            "weight":1,
+                            "name":"RGPrefab/LevelObject/Item/mysterious_pot_hp_regen.prefab"
+                        },
+                        {
+                            "weight":1,
+                            "name":"RGPrefab/LevelObject/Item/mysterious_pot_en_regen.prefab"
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "id":"LaserRefraction",
+            "param": [
+                {
+                    "probability":0.5,
+                    "count":3,
+                    "damageFactor":0.5
+                },
+                {
+                    "probability":0.5,
+                    "count":3,
+                    "damageFactor":1
+                },
+                {
+                    "probability":0.5,
+                    "count":3,
+                    "damageFactor":1.5
+                }
+            ]
+        },
+
+        {
+            "id":"EnemyHpUpSpeedDown",
+            "param":[
+                {"hpFactor":0.15, "speedFactor":-0.1},
+                {"hpFactor":0.3, "speedFactor":-0.2},
+                {"hpFactor":0.45, "speedFactor":-0.3}
+            ]
+        },
+
+        {
+            "id":"MissionKillPlant",
+            "param":[
+                {"count": 50}
+            ]
+        },
+
+        {
+            "id":"GetCoinAddEnergy",
+            "param":[
+                {"probability": 0.5, "energy":5}
+            ]
+        },
+
+        {
+            "id":"RecoverArmorOnKillEnemy",
+            "param":[
+                {"armor":1, "cooldown":5},
+                {"armor":1, "cooldown":4},
+                {"armor":1, "cooldown":3},
+                {"armor":1, "cooldown":2},
+                {"armor":1, "cooldown":1}
+            ]
+        },
+
+        {
+            "id":"CreatePhantomOnChargeAttack",
+            "param":[
+                {"duration":4, "count":1}
+            ]
+        },
+
+        {
+            "id":"SkillCooldownExtend",
+            "param":[
+                {"addCooldown":5, "reduceCooldownPercent":0.05},
+                {"addCooldown":5, "reduceCooldownPercent":0.075},
+                {"addCooldown":5, "reduceCooldownPercent":0.1}
+            ]
+        },
+
+        {
+            "id":"ArmorDamageConversion",
+            "param":[
+                {"armorRecoveryReduceFactor":0.5, "armorPerDamage":2},
+                {"armorRecoveryReduceFactor":0.5, "armorPerDamage":1}
+            ]
+        },
+
+        {
+            "id":"SwitchWeaponDamage",
+            "param":[
+                {"damageFactor":0.1, "duration":2, "maxStack":5},
+                {"damageFactor":0.2, "duration":2, "maxStack":5},
+                {"damageFactor":0.3, "duration":2, "maxStack":5},
+                {"damageFactor":0.4, "duration":2, "maxStack":5}
+            ]
+        },
+
+        {
+            "id":"ThunderStrikeNearPet",
+            "param":[
+                {"radius":8, "thunderRadius":5, "interval":0.5, "damage":6}
+            ]
+        },
+
+        {
+            "id":"AttackMoveSpeedStack",
+            "param":[
+                {"duration":1, "moveSpeed":0.15, "maxStack":3}
+            ]
+        },
+
+        {
+            "id":"AutoAimPenetration",
+            "param":[
+                {"damageFactor":0.5}
+            ]
+        },
+
+        {
+            "id":"FreeEnergyOnAttack",
+            "param":[
+                {"probability":0.1, "addDamage":4, "energyPercent":0.2}
+            ]
+        },
+
+        {
+            "id":"ElementalBottleOnAttack",
+            "param":[
+                {"checkDuration":5, "energyThreshold":20, "cooldown":8}
+            ]
+        },
+
+        {
+            "id":"EnergyBallMovement",
+            "param":[
+                {"recoveryReducePercent":0.5, "spawnProbability":0.3, "checkDistance":4, "cooldown":0.5}
+            ]
+        },
+
+        {
+            "id":"ArcaneEnergyBall",
+            "param":[
+                {"bulletCount":4, "maxStore":32},
+                {"bulletCount":6, "maxStore":32},
+                {"bulletCount":8, "maxStore":32},
+                {"bulletCount":10, "maxStore":32}
+            ]
+        },
+
+        {
+            "id":"BlackRoseCurse",
+            "param":[
+                {"damageFactor":0.5}
+            ]
+        },
+
+        {
+            "id":"Nepenthes",
+            "param":[
+                {"absorptionTime":1, "duration":16, "damagePercentage":0.2}
+            ]
+        },
+
+        {
+            "id":"MimicBackWeapon",
+            "param":[
+                {"mimicDuration":1, "cooldownTime":8}
+            ]
+        },
+
+        {
+            "id":"ToughPlant",
+            "param":[
+                {"hpFactor":3, "coinFactor":1},
+                {"hpFactor":3, "coinFactor":1.5},
+                {"hpFactor":3, "coinFactor":2}
+            ]
+        },
+
+        {
+            "id":"PlantExplode",
+            "param":[
+                {"explodeRadius":4, "explodeDamage":10},
+                {"explodeRadius":4.25, "explodeDamage":15},
+                {"explodeRadius":4.5, "explodeDamage":20}
+            ]
+        },
+
+        {
+            "id":"FirePath",
+            "param":[
+                {"damage":4, "duration":2},
+                {"damage":6, "duration":3.5},
+                {"damage":8, "duration":5}
+            ]
+        },
+
+        {
+            "id":"ShortCircuit",
+            "param":[
+                {"damage":10},
+                {"damage":15},
+                {"damage":20}
+            ]
+        },
+
+        {
+            "id":"LockHpAddDamage",
+            "param":[
+                {"addDamage":8}
+            ]
+        },
+
+        {
+            "id":"MoreExplosion",
+            "param":[
+                {"reduceDamagePercent":0.8, "addRange": 2},
+                {"reduceDamagePercent":0.7, "addRange": 2},
+                {"reduceDamagePercent":0.6, "addRange": 2},
+                {"reduceDamagePercent":0.5, "addRange": 2}
+            ]
+        },
+
+        {
+            "id":"MonkeySummon",
+            "param":[
+                {"count":5, "cooldown":15, "hp":14}
+            ]
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+# 系统
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+
+# 大文件
+*.apk
+*.so
+*.dat
+*.bin
+*.ab
+*.unity3d
+
+# 临时
+_*.txt
+_*.json
+_*.log
+_*.pkl
+tmp_*
+temp_*

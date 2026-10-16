@@ -1,0 +1,6 @@
+﻿module,aoe_range_per_stack,attack_speed,attack_speed_per_stack,bullet_size_increase,bullet_size_mark,cooldown,critical,damage_factor_per_stack,energy_per_stack,fixed_back_weapon_count,max_stack,melee_size_factor,melee_size_mark,prefab_path,show_counter,skill_haste,stack_duration,summon_effect_path,weapon_damage_factor,weapon_scale_factor,weapon_star_prefab_path,weapon_star_sorting_order_offset,weapon_visual_path
+SwordMaster,,,,,,,,,,,,0.25,"""RuntimeLuaSwordMaster""",,,,,,,,,,
+KnightSummon,,,,,,12,,,,,,,,"""RGPrefab/Pet/npc_knight_01.prefab""",false,,,"""RGPrefab/Effect/fx_obj_smoke""",,,,,
+EnergyRecycle,0.1,,0.05,,,,,0.05,10,,5,,,,,,12,,,,,,
+SkillHaste,,,,,,,,,,,,,,,,25,,,,,,,
+ExclusiveDivineWeapon,,0.25,,0.25,"""RuntimeLuaExclusiveDivineWeapon""",,25,,,0,,,,,,,,,0.25,1.25,"""RGTexture/weapon/mythic/star.prefab""",100,"""w"""

@@ -1,0 +1,530 @@
+{
+ "ARAMLegendaryStart": [
+  2169
+ ],
+ "ARAM_BuffEnd": [
+  2185
+ ],
+ "ARAM_NormalBuffEnd": [
+  2151
+ ],
+ "AddDefWithHighEnergy": [
+  2113
+ ],
+ "AddEnBallRecvAndEnemy": [
+  2120
+ ],
+ "AdditionStart": [
+  1000
+ ],
+ "AirReinforcement": [
+  2177
+ ],
+ "ArcaneAmmo": [
+  4018
+ ],
+ "ArcaneDictionary": [
+  4066
+ ],
+ "AstralEnergy": [
+  1014
+ ],
+ "Automation": [
+  4028
+ ],
+ "BattleGainCoin": [
+  2116
+ ],
+ "Begging2": [
+  2006
+ ],
+ "BigHand": [
+  4036
+ ],
+ "BlackRoseCurse": [
+  2181
+ ],
+ "BloodRage": [
+  4005
+ ],
+ "BulletSurround": [
+  2131
+ ],
+ "CalamityMark": [
+  4107
+ ],
+ "ChainExplosion": [
+  4032
+ ],
+ "ChaosStrike": [
+  2175
+ ],
+ "ChargePhantom": [
+  4104
+ ],
+ "ChargingMomentum": [
+  4047
+ ],
+ "CoinToMaxHP": [
+  2112
+ ],
+ "CollisionBlast": [
+  4095
+ ],
+ "CombatHormone": [
+  4092
+ ],
+ "ComboGunBuffBegin": [
+  2200
+ ],
+ "ControlElement": [
+  1005
+ ],
+ "CounterattackMissiles": [
+  4081
+ ],
+ "Courage": [
+  4060
+ ],
+ "Critical": [
+  4083
+ ],
+ "CriticalMaster": [
+  4006
+ ],
+ "CriticalRhythm": [
+  4007
+ ],
+ "CriticalSplit": [
+  4014
+ ],
+ "CriticalTracking": [
+  4017
+ ],
+ "CyclicElementEnhance": [
+  2105
+ ],
+ "DamageShockwave": [
+  4079
+ ],
+ "DoubleThrow": [
+  4038
+ ],
+ "DualBladeFlow": [
+  4052
+ ],
+ "DungeonGourmet": [
+  1025
+ ],
+ "ElementalAreaEnhance": [
+  2134
+ ],
+ "ElementalBurst": [
+  4059
+ ],
+ "ElementalCycle": [
+  4099
+ ],
+ "ElementalMastery": [
+  4082
+ ],
+ "ElementalResonance": [
+  4098
+ ],
+ "ElementalSummon": [
+  4103
+ ],
+ "EmergencyShield": [
+  4091
+ ],
+ "EnemyHpUpSpeedDown": [
+  2142
+ ],
+ "EnergyRecycle": [
+  4019
+ ],
+ "EnergySiphon": [
+  4065
+ ],
+ "EnhancedRebound": [
+  4025
+ ],
+ "ExEnergyForExDamage": [
+  2107
+ ],
+ "ExclusiveDivineWeapon": [
+  4096
+ ],
+ "ExplosionExpansion": [
+  4031
+ ],
+ "ExplosiveDevice": [
+  4094
+ ],
+ "ExplosiveRemains": [
+  4030
+ ],
+ "ExtraEmitBullet": [
+  2102
+ ],
+ "FightingSoul": [
+  4008
+ ],
+ "FightingSpirit": [
+  1011
+ ],
+ "FireOverload": [
+  4093
+ ],
+ "FireShield": [
+  4113
+ ],
+ "FireWork": [
+  2178
+ ],
+ "FlySword": [
+  1003
+ ],
+ "FocusOn": [
+  1020
+ ],
+ "FreeEnergyOnAttack": [
+  2180
+ ],
+ "FreeMecha": [
+  2141
+ ],
+ "FreeRefreshShop": [
+  2122
+ ],
+ "FrostNovaOnShieldHit": [
+  2172
+ ],
+ "FullFirepower": [
+  4027
+ ],
+ "GainCoinOnCriticalKill": [
+  2119
+ ],
+ "GetCoinAddEnergy": [
+  2144
+ ],
+ "GhostBullet": [
+  4021
+ ],
+ "GiantBulletAmplification": [
+  4024
+ ],
+ "GiftPackage": [
+  2137
+ ],
+ "GlassCannon": [
+  4004
+ ],
+ "GravityLeap": [
+  4090
+ ],
+ "Headshot": [
+  4009
+ ],
+ "HealingBeam": [
+  4072
+ ],
+ "HeavyStrike": [
+  2135
+ ],
+ "HighVelocityProjectile": [
+  4015
+ ],
+ "HitEnemyCreateThunder": [
+  2003
+ ],
+ "HitTracking": [
+  4016
+ ],
+ "HolyNovaOnDying": [
+  2170
+ ],
+ "IceFreeze": [
+  1017
+ ],
+ "IcePick": [
+  1015
+ ],
+ "IceSculpture": [
+  1016
+ ],
+ "IceShield": [
+  4114
+ ],
+ "IncreaseVolume": [
+  1019
+ ],
+ "IndomitableShield": [
+  4078
+ ],
+ "InnerStrength": [
+  1009
+ ],
+ "JokerDream": [
+  1018
+ ],
+ "KnightSummon": [
+  4086
+ ],
+ "KnightsForces": [
+  1008
+ ],
+ "LaserElectrification": [
+  4044
+ ],
+ "LaserRefraction": [
+  2140
+ ],
+ "LaserRefractionRuntime": [
+  4042
+ ],
+ "LaserScattering": [
+  4043
+ ],
+ "LaserThickening": [
+  4041
+ ],
+ "LockHpAddDamage": [
+  2149
+ ],
+ "MagicMissiles": [
+  4085
+ ],
+ "MeleeBulletRebound": [
+  4050
+ ],
+ "MimicBackWeapon": [
+  2183
+ ],
+ "MissionKillPlant": [
+  2143
+ ],
+ "ModeLoopTravelBuffEnd": [
+  2008
+ ],
+ "MomentumThrow": [
+  4040
+ ],
+ "MonkeySummon": [
+  2184
+ ],
+ "MonkeySummonRuntime": [
+  4076
+ ],
+ "MoreExplosion": [
+  2150
+ ],
+ "MorePlants": [
+  2123
+ ],
+ "MoveEnhanceAttack": [
+  2106
+ ],
+ "MoveReleaseHurricane": [
+  2174
+ ],
+ "MultipleClones": [
+  4106
+ ],
+ "MythicWeaponChest": [
+  4100
+ ],
+ "Nepenthes": [
+  2182
+ ],
+ "NewTalentBuffEnd": [
+  4117
+ ],
+ "NextLevelRestoreEnergy": [
+  2002
+ ],
+ "Overclock": [
+  4001
+ ],
+ "PartyTime": [
+  4075
+ ],
+ "PeriodicImmuneElement": [
+  2117
+ ],
+ "PetCharge": [
+  2108
+ ],
+ "PetMimic": [
+  2128
+ ],
+ "PetSummonOnKill": [
+  4073
+ ],
+ "PlantExplode": [
+  2148
+ ],
+ "PoisonShield": [
+  4112
+ ],
+ "PrecisionThrow": [
+  4039
+ ],
+ "Premeditate": [
+  2110
+ ],
+ "PriestBlessing": [
+  4087
+ ],
+ "ProjectileEcho": [
+  4013
+ ],
+ "ProjectileReflection": [
+  4022
+ ],
+ "RampageOutOfControl": [
+  4002
+ ],
+ "RapidCharge": [
+  4046
+ ],
+ "RecoverArmorOnInflictDebuff": [
+  2118
+ ],
+ "RecycleSpecialist": [
+  2130
+ ],
+ "ReflectionGrowth": [
+  4023
+ ],
+ "Reforge": [
+  4108
+ ],
+ "RegularFireBreath": [
+  2173
+ ],
+ "Scavenger": [
+  4109
+ ],
+ "ShockwavePulse": [
+  4089
+ ],
+ "ShopDiscount": [
+  2125
+ ],
+ "ShotgunIncrease": [
+  4116
+ ],
+ "Shuttle": [
+  1004
+ ],
+ "SkillAddDamage": [
+  2145
+ ],
+ "SkillHaste": [
+  4054
+ ],
+ "SkillInsight": [
+  4058
+ ],
+ "SkillPowStack": [
+  2138
+ ],
+ "SoulStrike": [
+  2171
+ ],
+ "StingRevenge": [
+  2124
+ ],
+ "SummonOwl": [
+  1006
+ ],
+ "SummonPet": [
+  2133
+ ],
+ "SunglassesAirReinforcement": [
+  4077
+ ],
+ "SuperCharge": [
+  4048
+ ],
+ "SwiftShadow": [
+  4061
+ ],
+ "SwiftStepArmor": [
+  4062
+ ],
+ "SwitchWeaponCritical": [
+  4011
+ ],
+ "SwordCore": [
+  1012
+ ],
+ "SwordMaster": [
+  4049
+ ],
+ "TemporalStasis": [
+  4070
+ ],
+ "TenCritical": [
+  2146
+ ],
+ "ThrowingCharge": [
+  4035
+ ],
+ "ThunderStrikeNearPet": [
+  2179
+ ],
+ "Thunderstorm": [
+  4010
+ ],
+ "ToughPlant": [
+  2147
+ ],
+ "TutorEnhancement": [
+  4056
+ ],
+ "VigorousSpirit": [
+  4068
+ ],
+ "VoidBuffBegin": [
+  3000
+ ],
+ "VoidBuffEnd": [
+  3008
+ ],
+ "VoidCooperation": [
+  3006
+ ],
+ "VoidHandCut": [
+  3001
+ ],
+ "VoidRiftImmune": [
+  3002
+ ],
+ "VoidShelter": [
+  3005
+ ],
+ "VoidShield": [
+  3004
+ ],
+ "WalkStandTrick": [
+  2121
+ ],
+ "WeaponCapacityExpansion": [
+  4029
+ ],
+ "WeaponSkillMastery": [
+  4097
+ ],
+ "WellWater": [
+  1001
+ ],
+ "WhirlWindSlashRuntime": [
+  4053
+ ],
+ "YinYangPower": [
+  1023
+ ]
+}
