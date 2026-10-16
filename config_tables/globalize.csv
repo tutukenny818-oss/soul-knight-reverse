@@ -1,0 +1,7 @@
+GlobalizeType,Name,Condition,Data,Extra,Rules
+I2Globalize,��ѐ���������,"channels_[GP_VNM,IOS_VNM]",,,
+SpritesGlobalize,poker,"channels_[GP_VNM,IOS_VNM]",RGTexture/vnm/vnm_special_sprites.asset,,
+SpritesGlobalize,pokerS1,"channels_[GP_VNM,IOS_VNM]",RGTexture/vnm/vnm_skin_sprites.asset,,
+SpritesGlobalize,weapon_339_s_1,"channels_[GP_VNM,IOS_VNM]",RGTexture/vnm/vnm_skin_sprites.asset,,
+RulesGlobalize,commonRules,"channels_[GP_VNM,IOS_VNM]",,,"{""ForceSystemFont"":true,""HideLocalizeBtn"":false,""ChangeChillyRoomIconToEmail"":true,""CloseAd"":false,""CloseHeroRoomTv"":false,""CloseCNWord"":true,""CloseCheckSignature"":true,""CloseSaveDrawingButton"":true,""HideHireBoard"":true,""HideGallery"":true}"
+SpriteGlobalize,ageBtn,"channels_[GP_VNM,IOS_VNM]",RGTexture/vnm/vnm_special_sprites.asset,,

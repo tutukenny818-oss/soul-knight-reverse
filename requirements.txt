@@ -1,0 +1,14 @@
+# Soul Knight RE — Python 依赖
+# 基础（必需）
+capstone>=5.0
+pycryptodome>=3.20
+
+# 设备相关（可选）
+frida>=16.0
+
+# wiki 抓取（可选）
+curl_cffi>=0.6
+
+# 数据处理（可选）
+Pillow>=10.0
+lief>=0.14
