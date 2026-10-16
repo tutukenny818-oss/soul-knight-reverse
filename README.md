@@ -1,68 +1,73 @@
 # Soul Knight Reverse Engineering
 
-元气骑士（Soul Knight）8.6.0 逆向工程成果。
+元气骑士（Soul Knight）8.6.0 逆向工程成果 —— 加密破解、机制分析、数据提取。
 
 ## 内容
 
 | 目录 | 说明 |
 |---|---|
-| `docs/` | 逆向文档（含 [**QUICKSTART.md**](docs/QUICKSTART.md) 和 [索引](docs/README.md)） |
-| `docs/disasm/` | **关键函数反汇编证据**（8 篇） |
-| `config_tables/` | **18 张配置表明文**（武器/敌人/角色/技能） |
-| `dump/` | **核心类型摘录**（346 类，从 47503 类裁剪） |
-| `gamedata/` | 武器/技能/角色明细 + 资产索引 |
-| `tools/` | 分析工具（反汇编、解密、数据提取） |
-| `data/` | 结构化数据（天赋表、本地化索引） |
-| `lua_source/` | 已解出的天赋 Lua 源码 |
+| `docs/` | 逆向文档（加密破解、伤害公式、机制链条） |
+| `docs/disasm/` | 关键函数反汇编证据 |
+| `tools/` | 分析工具 |
+| `data/` | 结构化数据 |
+| `config_tables/` | 游戏原始配置表（18 张） |
+| `dump/` | 核心类型摘录 |
+| `lua_source/` | 解出的天赋 Lua 源码 |
 
 ## 主要成果
 
-### 1. 加密体系破解
+### 1. 加密体系
 
 | 文件 | 算法 | 状态 |
 |---|---|---|
-| `config.ab` | LZ4HC + XOR（周期130，key=`soulKnight`） | ✅ |
+| `config.ab` | LZ4HC + XOR（周期 130） | ✅ |
 | `global-metadata.dat` | 掩码逐字节 XOR | ✅ |
-| `libil2cpp.so` | XOR（周期 0x10000，key=0x6F） | ✅ |
-| 存档 12 个 | DES/CBC/PKCS7 | ✅ |
-| `runtime_lua/*.bytes` | CBC / 8字节 / 固定IV | ⚠️ 模式已确证，密钥未取 |
+| `libil2cpp.so` | XOR（周期 0x10000） | ✅ |
+| 存档（12 个） | DES/CBC/PKCS7 | ✅ |
+| `runtime_lua/*.bytes` | CBC / 8 字节 / 固定 IV | 模式已确证 |
 
-### 2. 伤害计算机制
+### 2. 伤害计算
 
 ```c
-最终伤害 = max(0, round_half_even(max(倍率,0) × 基础伤害))
+最终伤害 = max(0, round_half_even( max(倍率, 0) × 基础伤害 ))
 减伤后   = 原伤害 × (1 - clamp(减伤率, 0, 1))
 ```
 
-- 取整用**银行家舍入**（不是向下取整）
-- 暴击倍率默认 **1.0**（数据驱动，非硬编码）
-- 暴击伤害与**武器等级**耦合（`ResolveWeaponLevel`）
+取整使用 **银行家舍入**。
 
 ### 3. 防御公式
 
 ```
-实际防御 = round_half_even(sign(x) × 6.74 × log10(0.5×|x| + 0.972))
+实际防御 = round_half_even( sign(x) × 6.74 × log10(0.5×|x| + 0.972) )
 ```
 
-### 4. 关键方法论：IFix fallback
+### 4. 其余机制链
 
-游戏的 IFix 热更桩模式：
+| 链 | 核心 |
+|---|---|
+| 冷却缩减 | 递减公式，槽位 8 = 0.05 / 槽位 3 = 0.02 |
+| 移动速度 | 三段式，Bonus 0.3 / Loss 0.15 / 因子 15.0 |
+| 攻击速度 | 因子默认 30.0（槽位 14） |
+| 护甲回复 | 速度修正 + 概率触发 |
+
+### 5. 关键方法论：IFix fallback
 
 ```asm
 bl   IsPatched
 tbz  w0, #0, <FALLBACK>    ; ← 未 patch 时跳这里 = 原始实现
 ```
 
-**535 个函数的原始实现可读。**
+游戏所有 hot 方法都被 IFix 覆盖，但 fallback 分支保留原始实现。
+**535 个函数**的原始实现可读。
 
-### 5. ACE 反 Frida 绕过
+### 6. ACE 反调试绕过
 
 ```bash
 su 0 setprop init.svc.adbd stopped
 su 0 setprop ro.debuggable 0
 ```
 
-配合**零 Frida 内存读取**（`dd /proc/PID/mem`）可绕过进程保护。
+配合零 Frida 内存读取（`dd /proc/PID/mem`）。
 
 ## 工具依赖
 
@@ -70,10 +75,8 @@ su 0 setprop ro.debuggable 0
 python 3.13+
 capstone
 pycryptodome
-curl_cffi      # 灰机 wiki 抓取
-frida          # 可选
 ```
 
-## 免责声明
+## 说明
 
-本项目仅用于学习研究。所有分析对象为本地样本，未修改、未分发任何游戏资源。
+本仓库为逆向学习记录。所有分析对象为本地样本，未修改、未分发任何游戏资源。

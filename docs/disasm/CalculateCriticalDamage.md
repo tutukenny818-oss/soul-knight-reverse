@@ -31,4 +31,3 @@ float CalculateCriticalDamage(DamageObject* self, float inDamage)
 
 - **代码里没有 2.0 / 200 这个常数**
 - 200% 是**数据驱动的配置值**（在每个武器的配置里）
-- 这解释了 wiki 为什么写「**通常**为 200%」

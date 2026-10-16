@@ -16,4 +16,3 @@ ResolveWeaponLevel → GetSpeed → fmax s0, s0, #0
 
 **只有下限 `max(x, 0)`，无上限钳位。**
 
-> wiki 说的「10%/1000% 钳位」在上层调用方，不在此函数。

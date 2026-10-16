@@ -16,7 +16,7 @@ pip install capstone pycryptodome
 ### 可选（设备相关）
 
 ```bash
-pip install frida curl_cffi        # 动态注入 / wiki 抓取
+pip install frida                  # 动态注入（可选）
 ```
 
 ### `requirements.txt`
@@ -25,7 +25,7 @@ pip install frida curl_cffi        # 动态注入 / wiki 抓取
 capstone>=5.0
 pycryptodome>=3.20
 frida>=16.0          # 可选：动态分析
-curl_cffi>=0.6       # 可选：灰机 wiki 抓取
+
 Pillow>=10.0         # 可选：图片处理
 ```
 
@@ -185,26 +185,7 @@ python tools/x_loc_master.py      # 本地化表 ↔ 天赋 ID 对接
 python tools/x_talent_final.py    # 天赋最终表
 python tools/x_buff_stack.py      # 天赋数值
 python tools/x_final_master.py    # 合并所有来源
-python tools/x_finalize.py        # 生成 wikitext
 ```
-
----
-
-## 6. 灰机 wiki 抓取
-
-```bash
-python tools/s_huiji2.py
-# 需要 curl_cffi（绕 Cloudflare）
-```
-
-**可用的浏览器指纹**：
-```
-chrome116 / chrome110 / chrome104 / chrome101 / chrome100 / chrome99
-edge101 / edge99 / firefox133
-safari17_0 / safari15_5       ← 唯一能拿 HTML 的
-```
-
-**注意**：`chrome131 / chrome124 / chrome120` 已失效。
 
 ---
 
